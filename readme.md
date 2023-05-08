@@ -1,5 +1,5 @@
 
-# ecommer-api
+#JavaScript-Game-Development
 
 <a name="readme-top"></a>
 <!-- PROJECT LOGO -->
