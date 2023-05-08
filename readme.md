@@ -5,21 +5,21 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/erick-hz">
+  <a href="https://github.com/erick-hz/JavaScript-Game-Development">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">JavaScript Game Development</h3>
 
   <p align="center">
-    <a href="https://github.com/erick-hz"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/erick-hz/JavaScript-Game-Development"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/erick-hz">View Demo</a>
+    <a href="https://github.com/erick-hz/JavaScript-Game-Development">View Demo</a>
     ·
-    <a href="https://github.com/erick-hz">Report Bug</a>
+    <a href="https://github.com/erick-hz/JavaScript-Game-Development/issues">Report Bug</a>
     ·
-    <a href="https://github.com/erick-hz">Request Feature</a>
+    <a href="https://github.com/erick-hz/JavaScript-Game-Development/pulls">Request Feature</a>
   </p>
 </div>
 
@@ -94,5 +94,5 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[product-screenshot]: https://github.com/erick-hz/ecommer-api/blob/main/src/assests/banner.png
+[product-screenshot]: https://github.com/erick-hz/JavaScript-Game-Development/images/banner.png
 
