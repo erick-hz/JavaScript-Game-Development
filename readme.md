@@ -50,7 +50,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<img src="images/banner.png" alt="Logo">
+<img width="1293" height="659" alt="demo" src="https://github.com/user-attachments/assets/771803b9-d628-40fe-a2e7-7f8e31c201b4" />
 
 2D games with HTML, CSS & plain vanilla JavaScript, no frameworks and no libraries!
 
