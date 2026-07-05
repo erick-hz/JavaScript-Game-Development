@@ -10,18 +10,19 @@
   <body>
     <canvas id="canvas1"></canvas>
     <div class="controls">
-      <label for="animations">Choose animations:</label>
-      <select name="animations" id="animations">
-        <option value="idle">Idle</option>
-        <option value="jump">Jump</option>
-        <option value="fall">Fall</option>
-        <option value="dizzy">Dizzy</option>
-        <option value="sit">Sit</option>
-        <option value="roll">Roll</option>
-        <option value="bite">Bite</option>
-        <option value="ko">Ko</option>
-        <option value="getHit">Get hit</option>
-      </select>
+      <span class="controls-label">Choose animations:</span>
+      <div class="animation-buttons" role="group" aria-label="Choose animation">
+        <button class="animation-btn" data-animation="idle" type="button">Idle</button>
+        <button class="animation-btn" data-animation="jump" type="button">Jump</button>
+        <button class="animation-btn" data-animation="fall" type="button">Fall</button>
+        <button class="animation-btn animation-btn--active" data-animation="run" type="button">Run</button>
+        <button class="animation-btn" data-animation="dizzy" type="button">Dizzy</button>
+        <button class="animation-btn" data-animation="sit" type="button">Sit</button>
+        <button class="animation-btn" data-animation="roll" type="button">Roll</button>
+        <button class="animation-btn" data-animation="bite" type="button">Bite</button>
+        <button class="animation-btn" data-animation="ko" type="button">Ko</button>
+        <button class="animation-btn" data-animation="getHit" type="button">Get hit</button>
+      </div>
     </div>
 
     <script src="script.js"></script>

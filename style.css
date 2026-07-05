@@ -1,3 +1,25 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-image:
+        radial-gradient(circle at 18% 14%, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 34%),
+        linear-gradient(180deg, rgba(18, 24, 32, 0.16) 0%, rgba(18, 24, 32, 0.28) 100%),
+        url('./images/banner.png');
+    background-position: center, center, center;
+    background-size: cover, cover, cover;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(circle at center, rgba(0, 0, 0, 0) 52%, rgba(0, 0, 0, 0.25) 100%);
+}
+
 #canvas1 {
     position: absolute;
     top: 50%;
@@ -7,13 +29,85 @@
     height: 600px;
 }
 
+:root {
+    --panel-bg: rgba(255, 255, 255, 0.88);
+    --panel-border: rgba(255, 255, 255, 0.75);
+    --text-strong: #1f2937;
+    --text-soft: #4b5563;
+    --btn-bg: linear-gradient(180deg, #ffffff 0%, #f2f5f8 100%);
+    --btn-border: #cdd6df;
+    --btn-shadow: 0 4px 10px rgba(31, 41, 55, 0.12);
+    --btn-hover-shadow: 0 7px 16px rgba(31, 41, 55, 0.2);
+    --btn-active-bg: linear-gradient(180deg, #0f766e 0%, #0b5f59 100%);
+}
+
 .controls {
     position: absolute;
     z-index: 10;
     left: 50%;
+    top: 18px;
     transform: translate(-50%);
+    width: min(90%, 900px);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 14px 16px;
+    border-radius: 16px;
+    border: 1px solid var(--panel-border);
+    background: var(--panel-bg);
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.16);
+    backdrop-filter: blur(6px);
 }
 
-.controls, select, option {
-    font-size: 25px;
+.controls-label {
+    font-size: 28px;
+    color: var(--text-strong);
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
+
+.animation-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.animation-btn {
+    font-size: 15px;
+    color: var(--text-soft);
+    font-weight: 600;
+    padding: 5px 11px;
+    border-radius: 999px;
+    border: 1px solid var(--btn-border);
+    background: var(--btn-bg);
+    box-shadow: var(--btn-shadow);
+    cursor: pointer;
+    transition: transform 0.16s ease, box-shadow 0.16s ease, background 0.16s ease, color 0.16s ease;
+}
+
+.animation-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--btn-hover-shadow);
+}
+
+.animation-btn--active {
+    background: var(--btn-active-bg);
+    border-color: #0b5f59;
+    color: #fff;
+    box-shadow: 0 8px 18px rgba(11, 95, 89, 0.35);
+}
+
+.animation-btn:active {
+    transform: translateY(0);
+}
+
+@media (max-width: 680px) {
+    .controls-label {
+        font-size: 24px;
+    }
+
+    .animation-btn {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
 }
